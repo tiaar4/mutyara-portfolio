@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutiara Chandra N-Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Tambahkan CSS untuk animasi menu */
+      .mobile-menu {
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+      }
+
+      .mobile-menu.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      /* CSS untuk mengatur posisi menu mobile */
+      .mobile-menu-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-[#FEFEFE]">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2">
+        <img src="img/pumpin.gif" alt="Logo Gift" class="h-6 w-6" />
+            <span class="text-xl font-bold">MUTIARA CHANDRA NURSOBRINA</span>
+          
+</div>
+      
+          
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-gray-700 hover:text-gray-900">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-gray-900">About</a>
+            <a href="#portfolio" class="text-gray-700 hover:text-gray-900"
+              >Portfolio</a
+            >
+            <a href="#photography" class="text-gray-700 hover:text-gray-900">Photography</a>
+
+            <a href="#contact" class="text-gray-700 hover:text-gray-900"
+              >Contact</a
+            >
+            <button
+              class="bg-[#E9F3FD] text-gray-800 px-4 py-2 rounded-md hover:bg-blue-100 transition duration-300"
+            >
+              Let's Talk
+            </button>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-btn"
+            class="md:hidden text-gray-700 focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div
+          id="mobile-menu"
+          class="mobile-menu absolute top-16 left-0 w-full bg-white shadow-lg z-40"
+        >
+          <div class="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg rounded-b-lg">
+            <a
+              href="#home"
+              class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md"
+              >About</a
+            >
+            <a
+              href="#portfolio"
+              class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md"
+              >Portfolio</a
+            >
+             <a
+              href="#photography"
+              class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md"
+              >photography</a
+            >
+            <a
+              href="#contact"
+              class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md"
+              >Contact</a
+            >
+            <button
+              class="w-full text-left px-3 py-2 bg-[#E9F3FD] text-gray-800 rounded-md hover:bg-blue-100 transition duration-300"
+            >
+              Let's Talk
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+     
+    <section id="home">
+      <div class="py-20 bg-[#E9F3FD]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-8"
+          >
+            <!-- Left Content -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+              <h1
+                class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+              >
+                Hi, I'm Mutiara Chandra Nursobrina
+              </h1>
+              <p class="text-lg md:text-xl text-gray-600 mb-6">
+                  Designer Graphic & Photografer
+              </p>
+             
+              </button>
+              
+                <a
+                  href="https://www.instagram.com/mutiarach4ndra/"
+                  class="text-gray-600 hover:text-gray-900 transition duration-300"
+                >
+                  <i class="fab fa-instagram text-2xl"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Content - Hero Image -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-800 px-1 py-10">
+  
+  <div class="md:w-2/6 flex justify-left">
+    <img
+      src="img/pumpin.gif"
+      alt="Mutiara GIF"
+      class=" sm:w-706 sm:h-706 md:w-90 md:h-90 object"
+    />
+  </div>
+
+</div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mt-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">About Me</h2>
+        </div>
+        <div
+          class="flex flex-col-reverse md:flex-row items-center justify-between py-5"
+        >
+          <!-- Right Content - Hero Image -->
+          <div class="md:w-1/2 flex justify-center">
+            <div
+              class="bg-[#FEFEFE] rounded-full p-4 flex items-center justify-center"
+            >
+              <img
+                src="img/mutiara.jpeg"
+                alt="foto kamu"
+                class="rounded-full w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 object-cover"
+              />
+              <h1 class=""></h1>
+            </div>
+          </div>
+
+          <!-- right Content -->
+          <div class="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Hello!
+            </h1>
+            <p class="text-justify w-[30rem] text-xl text-gray-600 mb-8">
+My name is Mutiara Chandra Nursobrina, a Fine Arts Design student from Universitas Negeri Semarang, with an interest in graphic design and photography.            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-[#E9F3FD]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            My Portfolio
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Portfolio Item 1 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+          >
+            <img
+              src="img/port1.png"
+              alt="Graphic Design"
+              class="w-full px-5 py-2 h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Design Vector</h3>
+              <p class="text-gray-600 mb-4">
+                
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Illustrator</span
+                >
+                
+              </div>
+              <a href="pdfs/port1a.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+  View Project →
+</a>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+          >
+            <img
+              src="img/port2.png"
+              alt="Project 2"
+              class="w-full px-5 py-2 h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Design Identitas</h3>
+              <p class="text-gray-600 mb-4"></p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Illustrator</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Photoshop</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Photography</span
+                >
+              </div>
+              <a href="pdfs/mariposa-jewellery.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+              View Project →
+              </a>
+            </div>
+          </div>
+
+          
+          <!-- Portfolio Item 5 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+          >
+            <img
+              src="img/port3.png"
+              alt="Project 3"
+              class="w-full px-5 py-2 h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Layout Design</h3>
+              <p class="text-gray-600 mb-4">
+              
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Illustrator</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Photoshop</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Figma</span
+                >
+                
+              </div>
+              <a href="pdfs/port1d.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+  View Project →
+</a>
+            </div>
+          </div>
+
+            <!-- Portfolio Item 5 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+          >
+            <img
+              src="img/port8.png"
+              alt="Project 3"
+              class="w-full px-5 py-2 h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Design Packaging</h3>
+              <p class="text-gray-600 mb-4">
+              
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Illustrator</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Photoshop</span
+                >
+                <a href="pdfs/port1e.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+  View Project →
+</a>
+                
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Portfolio Item 5 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+          >
+            <img
+              src="img/port7.png"
+              alt="Project 3"
+              class="w-full px-5 py-2 h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Design Piktograf</h3>
+              <p class="text-gray-600 mb-4">
+              
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Illustrator</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Photoshop</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Photography</span
+                >
+                
+              </div>
+              <a href="pdfs/port1c.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+  View Project →
+</a>
+            </div>
+          </div>
+
+                   <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+          >
+            <img
+              src="img/port6.png"
+              alt="Project 3"
+              class="w-full px-5 py-2 h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Design Periklanan</h3>
+              <p class="text-gray-600 mb-4">
+              
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Illustrator</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Photoshop</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Canva</span
+                >
+                
+              </div>
+              <a href="pdfs/port1g.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+  View Project →
+</a>
+            </div>
+          </div>
+          
+            <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+          >
+          
+            <img
+              src="img/port5.png"
+              alt="Project 3"
+              class="w-full px-5 py-2 h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Persentasi Multimedia</h3>
+              <p class="text-gray-600 mb-4">
+              
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Illustrator</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Photoshop</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Canva</span
+                >
+                
+              </div>
+              <a href="pdfs/port1f.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+  View Project →
+</a>
+            </div>
+          </div>
+
+                    <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+          >
+            <img
+              src="img/port4.png"
+              alt="Project 3"
+              class="w-full px-5 py-2 h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Design Vector</h3>
+              <p class="text-gray-600 mb-4">
+              
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Illustrator</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Photoshop</span
+                >
+                
+                
+              </div>
+              
+              <a href="pdfs/port1h.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+  View Project →
+</a>
+            </div>
+          </div>
+
+            <!-- Portfolio Item 5 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+          >
+            <img
+              src="img/port9.png"
+              alt="Project 3"
+              class="w-full px-5 py-2 h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Design Karakter</h3>
+              <p class="text-gray-600 mb-4">
+              
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Illustrator</span
+                >
+                <span class="px-3 py-1 bg-[#E9F3FD] text-sm rounded-full"
+                  >Adobe Photoshop</span
+                >
+              </div>
+              <a href="pdfs/port1b.pdf" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium">
+  View Project →
+</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Photography Section -->
+<section id="photography" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        My Photography
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Temukan lebih banyak hasil jepretan saya di Instagram.
+      </p>
+    </div>
+
+<div class="mt-6 mb-10 flex justify-center">
+  <a
+    href="https://www.instagram.com/pumpk1nsky/"
+    target="_blank"
+    class="flex items-center space-x-2 bg-[#E9F3FD] hover:bg-blue-100 text-gray-800 font-medium py-2 px-4 rounded-full shadow-sm transition duration-300"
+  >
+    <i class="fab fa-instagram text-pink-600 text-lg"></i>
+    <span>pumpk1nsky</span>
+  </a>
+</div>
+
+
+</div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Photo Item 1 -->
+      <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img 
+        src="img/1.jpg" 
+        alt="Photography 1" 
+        class="w-full h-64 object-cover" />
+      </div>
+
+      <!-- Photo Item 2 -->
+      <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img 
+        src="img/11.jpeg" alt="Photography 2" class="w-full h-64 object-cover" />
+      </div>
+
+      <!-- Photo Item 3 -->
+      <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="img/3.jpeg" alt="Photography 3" class="w-full h-64 object-cover" />
+      </div>
+
+      <!-- Photo Item 4 -->
+      <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="img/4.jpeg" alt="Photography 4" class="w-full h-64 object-cover" />
+      </div>
+
+      <!-- Photo Item 5 -->
+      <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="img/5.jpeg" alt="Photography 5" class="w-full h-64 object-cover" />
+      </div>
+
+      <!-- Photo Item 6 -->
+      <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="img/7.jpeg" alt="Photography 6" class="w-full h-64 object-cover" />
+      </div>
+
+      <!-- Photo Item 7 -->
+      <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="img/8.jpeg" alt="Photography 5" class="w-full h-64 object-cover" />
+      </div>      
+
+         <!-- Photo Item 7 -->
+      <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="img/9.jpeg" alt="Photography 5" class="w-full h-64 object-cover" />
+      </div>      
+
+       <!-- Photo Item 8 -->
+      <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+        <img src="img/10.jpeg" alt="Photography 5" class="w-full h-64 object-cover" />
+      </div>      
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Contact
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Tertarik untuk berkolaborasi atau memiliki pertanyaan? Jangan ragu
+            untuk menghubungi saya.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                for="subject"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Subject</label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="w-full bg-[#E9F3FD] text-gray-800 px-6 py-3 rounded-md hover:bg-blue-100 transition duration-300"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Logo & Description -->
+          <div class="col-span-1 md:col-span-2">
+            <h3 class="text-xl font-bold mb-4">I'm Mutiara Chandra Nursobrina</h3>
+            <p class="text-gray-400 mb-4">
+              A Fine Arts Design student interested in graphic design and photography.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+              >
+                
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+              >
+                
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition duration-300"
+              >
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-envelope mr-2"></i>
+                <a
+                  href="mailto:contact@aldi.dev"
+                  class="hover:text-white transition duration-300"
+                  >mutiarachandran123@gmail.com</a
+                >
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-phone mr-2"></i>
+                <a
+                  href="tel:+6285721499832"
+                  class="hover:text-white transition duration-300"
+                  >+62 857-2149-9832</a
+                >
+              </li>
+              <li class="flex items-center text-gray-400">
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                <span>Sukabumi, Indonesia</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2025 Mutiara Chandra Nursobrina. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Previous JavaScript code for mobile menu
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        let isMenuOpen = false;
+
+        // Toggle menu function
+        function toggleMenu() {
+          isMenuOpen = !isMenuOpen;
+
+          // Update icon
+          menuBtn.innerHTML = isMenuOpen
+            ? '<i class="fas fa-times text-2xl"></i>'
+            : '<i class="fas fa-bars text-2xl"></i>';
+
+          // Toggle menu visibility with animation
+          if (isMenuOpen) {
+            mobileMenu.classList.add("active");
+          } else {
+            mobileMenu.classList.remove("active");
+          }
+        }
+
+        // Click event for menu button
+        menuBtn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          toggleMenu();
+        });
+
+        // Close menu when clicking on a menu item
+        document.addEventListener("click", (e) => {
+          if (
+            isMenuOpen &&
+            !mobileMenu.contains(e.target) &&
+            !menuBtn.contains(e.target)
+          ) {
+            isMenuOpen = false;
+            mobileMenu.classList.remove("active");
+            menuBtn.innerHTML = '<i class="fas fa-bars text-2xl"></i>';
+          }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", function (e) {
+          if (
+            isMenuOpen &&
+            !mobileMenu.contains(e.target) &&
+            !menuBtn.contains(e.target)
+          ) {
+            toggleMenu();
+          }
+        });
+
+        // Prevent menu from closing when clicking inside
+        mobileMenu.addEventListener("click", function (e) {
+          e.stopPropagation();
+        });
+
+        // Handle window resize
+        window.addEventListener("resize", function () {
+          if (window.innerWidth >= 768 && isMenuOpen) {
+            // 768px is the md breakpoint in Tailwind
+            toggleMenu();
+          }
+        });
+      });
+
+      // Form submission handling
+      const contactForm = document.querySelector("form");
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // Add your form submission logic here
+        alert("Thank you for your message! I will get back to you soon.");
+        contactForm.reset();
+      });
+    </script>
+  </body>
+</html>
